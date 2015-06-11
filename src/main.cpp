@@ -21,8 +21,8 @@ using namespace boost;
 //
 // Global state
 //
-static const uint256 hashGenesisBlockOfficial("0x000000d78e35e381ca738ceb855b9faf528f0970d994ce4eb4560b56cbe2f6c4");
-static const uint256 hashGenesisBlockTestNet ("0x0000013585f2f416fae10cb9dfe7b93f4628802c27fab1ce54e6a47ead252568");
+static const uint256 hashGenesisBlockOfficial("0x0000033935102527835881e52738eef610f6ee8af3d507d0f9e3b67362dea050");
+static const uint256 hashGenesisBlockTestNet ("0x00000206076cfa3e60b98c649f5cb937fc29c3a9e3505463be3d6b492e1eade1");
 
 CCriticalSection cs_setpwalletRegistered;
 set<CWallet*> setpwalletRegistered;
@@ -2260,13 +2260,13 @@ bool LoadBlockIndex(bool fAllowNew)
         // Genesis block
         const char* pszTimestamp = "Sharkwater - 11 JUNE 2015";
         unsigned int nTimeGenesis=1434024603;
-        unsigned int nNonceGenesis=0;
+        unsigned int nNonceGenesis=1368975;
 
         if (fTestNet)
         {
             pszTimestamp="Buffalo solider";
             nTimeGenesis=1434024633;
-            nNonceGenesis=0;
+            nNonceGenesis=796811;
         }
 
 
@@ -2310,9 +2310,9 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
         if (!fTestNet)
-            assert(block.hashMerkleRoot == uint256("0xf88246c72a053cc2176dbf2ac773bcf79f021bba9c2c3c8fccc0735c37d9354c"));
+            assert(block.hashMerkleRoot == uint256("0xe188c548f836da627493294760dd64bf19fb96e7dbcf4f51bade82a78804377c"));
         else
-            assert(block.hashMerkleRoot == uint256("0xde9e0c68d6503ae8c0c3d368b200dfc403192cdf926041565fe9de22be8ee1a4"));
+            assert(block.hashMerkleRoot == uint256("0x60a0272eec9893c58dc96a633ade3d792a19acc0fa33f6ed7d81f0ef391fe100"));
 
         block.print();
         assert(block.GetHash() == hashGenesisBlock);
