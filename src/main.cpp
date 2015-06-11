@@ -2258,15 +2258,15 @@ bool LoadBlockIndex(bool fAllowNew)
         //   vMerkleTree: 4a5e1e
 
         // Genesis block
-        const char* pszTimestamp = "intentionally broken genesis block - build is for public testnet only!";
-        unsigned int nTimeGenesis=1231231231;
-        unsigned int nNonceGenesis=123123;
+        const char* pszTimestamp = "Sharkwater - 11 JUNE 2015";
+        unsigned int nTimeGenesis=1434024603;
+        unsigned int nNonceGenesis=0;
 
         if (fTestNet)
         {
-            pszTimestamp="April 2, 2014 Supreme Court Strikes Down Overall Campaign Contribution Limits";
-            nTimeGenesis=1396491392;
-            nNonceGenesis=1130877;
+            pszTimestamp="Buffalo solider";
+            nTimeGenesis=1434024633;
+            nNonceGenesis=0;
         }
 
 
