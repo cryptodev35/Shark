@@ -46,7 +46,7 @@ static const int STAKE_TARGET_SPACING = 60 * 1; // peershares: 1 minute block sp
 static const int STAKE_MIN_AGE = 60 * 10; // peershares: Minimum age for coin age changed to 10 minutes 
 static const int STAKE_MAX_AGE = 60 * 60 * 24 * 366; // peershares: Stake age of full weight
 static const int64 IPO_SHARES = 1 * COIN; // peershares: Total number of shares to create using proof of work (intented for IPO)
-static const int64 PROOF_OF_WORK_BLOCKS = 40320; // peershares: Block height of the last proof of work block
+static const int64 PROOF_OF_WORK_BLOCKS = 16300; // peershares: Block height of the last proof of work block
 
 #ifdef USE_UPNP
 static const int fHaveUPnP = true;
