@@ -21,7 +21,7 @@ unsigned int nModifierInterval = MODIFIER_INTERVAL;
 // Hard checkpoints of stake modifiers to ensure they are deterministic
 static std::map<int, unsigned int> mapStakeModifierCheckpoints =
     boost::assign::map_list_of
-    ( 0, 0x0000006107d2a53981f7530e1f76b5e49fe72867301415b0e969fff3013ba21b )
+    ( 0, 0x0e00670bu )
     ;
 
 // Whether the given coinstake is subject to new v0.3 protocol
